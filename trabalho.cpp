@@ -20,21 +20,21 @@ float aumento,percaumento;
 
 for(i=0;i<5;i++)
   {
-   printf("\nDigite o cÛdigo do produto:");
+   printf("\nDigite o c√≥digo do produto:");
    scanf("\%i",&info[i].cod);
-   printf("\nDigite a descriÁ„o do produto:");
+   printf("\nDigite a descri√ß√£o do produto:");
    scanf("%s",&info[i].descricao);
-   printf("\nDigite o preÁo:");
+   printf("\nDigite o pre√ßo:");
    scanf("%f",&info[i].preco);
    printf("\nDigite a quantidade do produto:");
    scanf("%i",&info[i].qtde);
  }
  
-   printf("\nEscolha uma opÁ„o");
+   printf("\nEscolha uma op√ß√£o");
    printf("\n1-Mostre os dados cadastrados ");
-   printf("\n2-Digitar um percentual de aumento de preÁos e altere os preÁos dos produtos");
-   printf("\n3-Informe a descriÁ„o dos produtos que tÍm quantidade em estoque abaixo de 10 unidades");
-   printf("\n4-Informe a descriÁ„o dos produtos que tÍm preÁos acima de R$ 1.000,00");
+   printf("\n2-Digitar um percentual de aumento de pre√ßos e altere os pre√ßos dos produtos");
+   printf("\n3-Informe a descri√ß√£o dos produtos que t√™m quantidade em estoque abaixo de 10 unidades");
+   printf("\n4-Informe a descri√ß√£o dos produtos que t√™m pre√ßos acima de R$ 1.000,00");
    printf("\n5-Informe o produto mais caro e o mais barato.");
    printf("\n6-Sair");
    
@@ -43,9 +43,9 @@ for(i=0;i<5;i++)
           {case 1: for (i=0;i<5;i++)
            {
 		   printf("\nDados Cadastrados!");
-           printf("\nCÛdigo do produto: %i",info[i].cod)
-           printf("\nDescriÁ„o do produto: %s",info[i].descricao);
-           printf("\nPreÁo do produto: %f",info[i].preco);
+           printf("\nC√≥digo do produto: %i",info[i].cod)
+           printf("\nDescri√ß√£o do produto: %s",info[i].descricao);
+           printf("\nPre√ßo do produto: %f",info[i].preco);
            printf("\nQuantidade do produto: %i",info[i].qtde);
            }
             break;
@@ -61,13 +61,36 @@ for(i=0;i<5;i++)
             
            case 3: for (i=0;i<5;i++)
            { if (info[i].qtde<10)
-           {printf("O produto %s, tem quantidade inferior a 10 em estoque",info[i].qtde);
+           {printf("O produto %s, tem quantidade inferior a 10 em estoque",info[i].descricao);
 		   }
 		   break;
             
            case 4: for (i=0;i<5;i++)
            { if (info[i].preco>1000)
-           {printf("O produto %f tem o preÁo acima de R$ 1.000,00");
+           {printf("O produto %f tem o pre√ßo acima de R$ 1.000,00",info[i].descricao);
 		   }
 		   break;
+		   
+		   case 5:for (i=0;i<5;i++)
+		{
+		if (info[i].preco < premen)
+		{
+			premen = info[i].preco;
+		}
+		if (info[i].preco > prema)
+		{
+			prema = info[i].preco;
+		}
+	}
+		printf ("\n O maior pre√ßo √©: %.2f",prema);
+		printf ("\n O menor pre√ßo √©: %.2f",premen);
+		break;
+		
+		case 6:printf ("\nSaindo do programa.");
+		break;
+		
+		default: printf ("\nOp√ß√£o inv√°lida");
+	}
+    } while(op !=6);
+    }
 }
