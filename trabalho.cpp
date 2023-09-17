@@ -2,6 +2,7 @@
 #include<math.h>
 #include<stdio.h>
 #include<locale.h>
+#include <string.h>
 
 main()
 {setlocale(LC_ALL,"Portuguese");
