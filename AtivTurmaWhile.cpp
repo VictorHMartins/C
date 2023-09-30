@@ -24,9 +24,9 @@ for(i=0;i<5;i++)
    printf("\nNota 2: ");
    scanf ("%f",&turma[i].n2);
    }
-printf("\nDigite sua opção: 1- calcular media,");
+printf("\nDigite sua opÃ§Ã£o: 1- calcular media,");
 printf("\n 2-verificar quantos aprovados, ");
-printf("\n 3-calcular a média da turma, ");
+printf("\n 3-calcular a mÃ©dia da turma, ");
 printf("\n 4-mostrar o RA do aluno com maior nota, ");
 printf("\n 5-sair");
 scanf("%i",&op);
@@ -36,7 +36,7 @@ while (op != 5)
           {case 1: for (i=0;i<5;i++)
                          {turma[i].media = (turma[i].n1 + turma[i].n2)/2;
                          soma = soma + turma[i].media;
-                         printf("\nMédia do aluno %i: %f",i+1,turma[i].media);
+                         printf("\nMÃ©dia do aluno %i: %f",i+1,turma[i].media);
 			          }
 			     break;
 		case 2: for (i=0;i<5;i++)
@@ -56,14 +56,14 @@ while (op != 5)
 				break;
 		default: break;
 		}
-	printf("\nDigite sua opção: 1- calcular media,");
+	printf("\nDigite sua opÃ§Ã£o: 1- calcular media,");
      printf("\n 2-verificar quantos aprovados, ");
-     printf("\n 3-calcular a média da turma, ");
+     printf("\n 3-calcular a mÃ©dia da turma, ");
      printf("\n 4-mostrar o RA do aluno com maior nota, ");
      printf("\n 5-sair");
      scanf("%i",&op);
 	} 
 printf("\nForam aprovados %i alunos ", qtdeap);
-printf("\nA média da turma foi %f", mediat);
+printf("\nA mÃ©dia da turma foi %f", mediat);
 printf("\nA maior nota: %f do RA %i", maior, RAmaior);
 }
