@@ -23,7 +23,7 @@ printf("Digite o nome do produto:");
 scanf("%s",&A.descricao);
 printf("Digite o codigo do produto:");
 scanf("%i",&A.cod);
-printf("Digite o preço do produto:");
+printf("Digite o preÃ§o do produto:");
 scanf("%f",&A.preco);
 printf("Digite a quantidade do produto:");
 scanf("%i",&A.qtde);
@@ -34,7 +34,7 @@ printf("Digite o nome do segundo produto:");
 scanf("%s",&B.descricao);
 printf("Digite o codigo do segundo produto:");
 scanf("%i",&B.cod);
-printf("Digite o preço do segundo produto:");
+printf("Digite o preÃ§o do segundo produto:");
 scanf("%f",&B.preco);
 printf("Digite a quantidade do segundo produto:");
 scanf("%i",&B.qtde);
@@ -43,7 +43,7 @@ printf("Digite o nome do terceiro oproduto:");
 scanf("%s",&C.descricao);
 printf("Digite o codigo do terceiro produto:");
 scanf("%i",&C.cod);
-printf("Digite o preço do terceiro produto:");
+printf("Digite o preÃ§o do terceiro produto:");
 scanf("%f",&C.preco);
 printf("Digite a quantidade do terceiro produto:");
 scanf("%i",&C.qtde);
@@ -51,8 +51,8 @@ scanf("%i",&C.qtde);
 media= (A.preco+B.preco+C.preco)/3;
 estq= A.qtde+B.qtde+C.qtde;
 
-printf("A media do preço dos produtos é:%.2f",media);
-printf("\nA quantidade total do estoque é: %i",estq);
+printf("A media do preÃ§o dos produtos Ã©:%.2f",media);
+printf("\nA quantidade total do estoque Ã©: %i",estq);
 
 
 
