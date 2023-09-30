@@ -20,29 +20,29 @@ for(i=1;i<=15;i++)
 scanf("%i",&catp);
 
 switch (catp)
-   {case 1:printf("\nEletrÙnicos!");
-        printf("\nDigite o preÁo do produto:");
+   {case 1:printf("\nEletr√¥nicos!");
+        printf("\nDigite o pre√ßo do produto:");
         scanf("%f",&preco);
         
     if(preco<=50)
        {
-       	printf("\nO produto n„o possui descontos!");
+       	printf("\nO produto n√£o possui descontos!");
        	total=total+preco;
        }
     else if (preco<=150.00)
        {valord=preco*15/100;
-        printf("\nO valor do desconto ser· %.2f:",valord);
+        printf("\nO valor do desconto ser√° %.2f:",valord);
         precod=preco-(preco*15/100);
-        printf("\nO valor do produto com descoto der· de %.2f:",precod);
+        printf("\nO valor do produto com descoto der√° de %.2f:",precod);
         proddesc=proddesc+1;
         soma=soma+valord;
         totald=totald+precod;
        }
     else if (preco>=150.01)
        {valord=preco*20/100;
-        printf("\nO valor do desconto ser· %.2f:",valord);
+        printf("\nO valor do desconto ser√° %.2f:",valord);
         precod=preco-(preco*20/100);
-        printf("\nO valor do produto com descoto der· de %.2f:",precod);
+        printf("\nO valor do produto com descoto der√° de %.2f:",precod);
         proddesc=proddesc+1;
         soma=soma+valord;
          totald=totald+precod;
@@ -51,28 +51,28 @@ switch (catp)
        
 	   
 	   case 2:printf("\nPanelas!");
-        printf("\nDigite o preÁo do produto:");
+        printf("\nDigite o pre√ßo do produto:");
         scanf("%f",&preco);
         
     if(preco<=70)
        {
-       	printf("\nO produto n„o possui descontos!");
+       	printf("\nO produto n√£o possui descontos!");
        	total=total+preco;
        }
     else if ((preco >= 70.01)&&(preco<=170.00))
        {valord=preco*15/100;
-        printf("\nO valor do desconto ser· %.2f:",valord);
+        printf("\nO valor do desconto ser√° %.2f:",valord);
         precod=preco-(preco*15/100);
-        printf("\nO valor do produto com descoto der· de %.2f:",precod);
+        printf("\nO valor do produto com descoto der√° de %.2f:",precod);
         proddesc=proddesc+1;
         soma=soma+valord;
         totald=totald+precod;
        }
     else if (preco>=170.01)
        {valord=preco*20/100;
-        printf("\nO valor do desconto ser· %.2f:",valord);
+        printf("\nO valor do desconto ser√° %.2f:",valord);
         precod=preco-(preco*20/100);
-        printf("\nO valor do produto com descoto der· de %.2f:",precod);
+        printf("\nO valor do produto com descoto der√° de %.2f:",precod);
         proddesc=proddesc+1;
         soma=soma+valord;
         totald=totald+precod;
@@ -80,28 +80,28 @@ switch (catp)
     break;
     
     case 3:printf("\nToalhas de banho!");
-        printf("\nDigite o preÁo do produto:");
+        printf("\nDigite o pre√ßo do produto:");
         scanf("%f",&preco);
         
     if(preco<=30)
        {
-       	printf("\nO produto n„o possui descontos!");
+       	printf("\nO produto n√£o possui descontos!");
        	total=total+preco;
        }
     else if ((preco >= 30.01)&&(preco<=130.00))
        {valord=preco*15/100;
-        printf("\nO valor do desconto ser· %.2f:",valord);
+        printf("\nO valor do desconto ser√° %.2f:",valord);
         precod=preco-(preco*15/100);
-        printf("\nO valor do produto com descoto der· de %.2f:",precod);
+        printf("\nO valor do produto com descoto der√° de %.2f:",precod);
         proddesc=proddesc+1;
         soma=soma+valord;
         totald=totald+precod;
        }
     else if (preco>=130.01)
        {valord=preco*20/100;
-        printf("\nO valor do desconto ser· %.2f:",valord);
+        printf("\nO valor do desconto ser√° %.2f:",valord);
         precod=preco-(preco*20/100);
-        printf("\nO valor do produto com descoto der· de %.2f:",precod);
+        printf("\nO valor do produto com descoto der√° de %.2f:",precod);
         proddesc=proddesc+1;
         soma=soma+valord;
         totald=totald+precod;
@@ -109,28 +109,28 @@ switch (catp)
     break;
     
     case 4:printf("\nRoupas de cama!");
-        printf("\nDigite o preÁo do produto:");
+        printf("\nDigite o pre√ßo do produto:");
         scanf("%f",&preco);
         
     if(preco<=40)
        {
-       	printf("\nO produto n„o possui descontos!");
+       	printf("\nO produto n√£o possui descontos!");
        	total=total+preco;
        }
     else if ((preco >= 40.01)&&(preco<=140.00))
        {valord=preco*15/100;
-        printf("\nO valor do desconto ser· %.2f:",valord);
+        printf("\nO valor do desconto ser√° %.2f:",valord);
         precod=preco-(preco*15/100);
-        printf("\nO valor do produto com descoto der· de %.2f:",precod);
+        printf("\nO valor do produto com descoto der√° de %.2f:",precod);
         proddesc=proddesc+1;
         soma=soma+valord;
         totald=totald+precod;
        }
     else if (preco>=140.01)
        {valord=preco*20/100;
-        printf("\nO valor do desconto ser· %.2f:",valord);
+        printf("\nO valor do desconto ser√° %.2f:",valord);
         precod=preco-(preco*20/100);
-        printf("\nO valor do produto com descoto der· de %.2f:",precod);
+        printf("\nO valor do produto com descoto der√° de %.2f:",precod);
         proddesc=proddesc+1;
         soma=soma+valord;
         totald=totald+precod;
@@ -138,28 +138,28 @@ switch (catp)
     break;
     
     case 5:printf("\nBeleza!");
-        printf("\nDigite o preÁo do produto:");
+        printf("\nDigite o pre√ßo do produto:");
         scanf("%f",&preco);
         
     if(preco<=60)
        {
-       	printf("\nO produto n„o possui descontos!");
+       	printf("\nO produto n√£o possui descontos!");
        	total=total+preco;
        }
     else if ((preco >= 60.01)&&(preco<=160.00))
        {valord=preco*15/100;
-        printf("\nO valor do desconto ser· %.2f:",valord);
+        printf("\nO valor do desconto ser√° %.2f:",valord);
         precod=preco-(preco*15/100);
-        printf("\nO valor do produto com descoto der· de %.2f:",precod);
+        printf("\nO valor do produto com descoto der√° de %.2f:",precod);
         proddesc=proddesc+1;
         soma=soma+valord;
         totald=totald+precod;
        }
     else if (preco>=160.01)
        {valord=preco*20/100;
-        printf("\nO valor do desconto ser· %.2f:",valord);
+        printf("\nO valor do desconto ser√° %.2f:",valord);
         precod=preco-(preco*20/100);
-        printf("\nO valor do produto com descoto der· de %.2f:",precod);
+        printf("\nO valor do produto com descoto der√° de %.2f:",precod);
         proddesc=proddesc+1;
         soma=soma+valord;
         totald=totald+precod;
@@ -167,11 +167,11 @@ switch (catp)
     break;
     
     case 6:printf("\nOutros!");
-        printf("\nDigite o preÁo do produto:");
+        printf("\nDigite o pre√ßo do produto:");
         scanf("%f",&preco);
     if(preco>=0)
        {
-       	printf("\nO produto n„o possui descontos!");
+       	printf("\nO produto n√£o possui descontos!");
        	total=total+preco;
        }
     
@@ -181,7 +181,7 @@ switch (catp)
 }
    venda=total+totald;
    mediadesc=soma/proddesc;
-printf("\nAquantidade de produtos que tiveram descontos È %i:",proddesc);
-printf("\nA mÈdia dos descontos È %.2f",mediadesc);
-printf("\nO total da venda È %.2f",venda);
+printf("\nAquantidade de produtos que tiveram descontos √© %i:",proddesc);
+printf("\nA m√©dia dos descontos √© %.2f",mediadesc);
+printf("\nO total da venda √© %.2f",venda);
 }
