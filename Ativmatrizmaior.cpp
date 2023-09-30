@@ -1,4 +1,4 @@
-//Faça um programa em C que guarde números inteiros
+//FaÃ§a um programa em C que guarde nÃºmeros inteiros
 //em uma matriz com 2 linhas e 5 colunas e informe qual
 //o maior valor armazenado
 #include<conio.h>
@@ -18,6 +18,6 @@ main()
 	  }
     }
    }
- printf("\nO maior valor é %i ",maior);   
+ printf("\nO maior valor Ã© %i ",maior);   
  }
 
