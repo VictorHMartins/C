@@ -25,7 +25,7 @@ for(a=0;a<15;a++)
     {nota++;
 	}
 }
-printf("\nSua nota é:%i",nota);
+printf("\nSua nota Ã©:%i",nota);
    }
    
 
