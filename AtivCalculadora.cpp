@@ -1,11 +1,11 @@
-//Faça um programa que simule o funcionamento de uma
-//calculadora. O usuário deverá digitar 3 números e o programa
-//deverá ter funções específicas para calcular a soma dos
-//números, a subtração de 2 deles, a multiplicação entre
-//dois deles, a divisão de dois deles (desde que um não seja
-//zero), e a média entre os três. O programa principal
-//deverá ter um laço de repetição permitindo ao usuário
-//obter os resultados de todas as funções, se quiser.
+//FaÃ§a um programa que simule o funcionamento de uma
+//calculadora. O usuÃ¡rio deverÃ¡ digitar 3 nÃºmeros e o programa
+//deverÃ¡ ter funÃ§Ãµes especÃ­ficas para calcular a soma dos
+//nÃºmeros, a subtraÃ§Ã£o de 2 deles, a multiplicaÃ§Ã£o entre
+//dois deles, a divisÃ£o de dois deles (desde que um nÃ£o seja
+//zero), e a mÃ©dia entre os trÃªs. O programa principal
+//deverÃ¡ ter um laÃ§o de repetiÃ§Ã£o permitindo ao usuÃ¡rio
+//obter os resultados de todas as funÃ§Ãµes, se quiser.
 
 #include<conio.h>
 #include<stdio.h>
@@ -22,73 +22,84 @@ float calcsubtracao(float a, float b) {
 
 float calcmultiplicacao(float a, float b) {
     return a * b;
-    
-float calcdivisao(float a, float b) 
-    {if (b != 0) {
+}
+
+float calcdivisao(float a, float b) {
+    if (b != 0) {
         return a / b;
     } else {
-        printf("\nErro: Divisão por zero!");
+        printf("\nErro: DivisÃ£o por zero!");
         return 0;
     }
 }
 
 float calcularMedia(float a, float b, float c) {
     return (a + b + c) / 3;
-    
-main()
+}
+
+main() 
   {
    setlocale(LC_ALL, "Portuguese");
     float n1, n2, n3, result;
     int op;
     
-     printf("\nDigite o primeiro número: ");
+     printf("\nDigite o primeiro nÃºmero: ");
      scanf("%f",&n1);
-     printf("\nDigite o segundo número: ");
+     printf("\nDigite o segundo nÃºmero: ");
      scanf("%f",&n2);
-     printf("\nDigite o terceiro número: ");
+     printf("\nDigite o terceiro nÃºmero: ");
      scanf("%f",&n3);
     
-    printf("\nEscolha a operação que deseja realizar:");
-    printf("\n1. Soma dos números");
-    printf("\n2. Subtração de dois números");
-    printf("\n3. Multiplicação entre dois números");
-    printf("\n4. Divisão de dois números");
-    printf("\n5. Média dos três números");
+    printf("\nEscolha a operaÃ§Ã£o que deseja realizar:");
+    printf("\n1. Soma dos nÃºmeros");
+    printf("\n2. SubtraÃ§Ã£o de dois nÃºmeros");
+    printf("\n3. MultiplicaÃ§Ã£o entre dois nÃºmeros");
+    printf("\n4. DivisÃ£o de dois nÃºmeros");
+    printf("\n5. MÃ©dia dos trÃªs nÃºmeros");
     printf("\n6. Sair");
     scanf("%i",&op);
     
-  while (op != 5)
+  while (op != 6)
    {switch (op) 
-    {case 1 : printf ("\nSoma dos números");
+    {case 1 : printf ("\nSoma dos nÃºmeros");
               result = calcsoma (n1,n2,n3);
-              printf("\nO resultado será: %f", total);
+              printf("\nO resultado serÃ¡: %.2f", result);
               break; 
       
-	case 2 : printf ("\nSubtração de dois números");
+	case 2 : printf ("\nSubtraÃ§Ã£o de dois nÃºmeros");
               result = calcsubtracao (n1,n2);
-              printf("\nO resultado será: %f", total);
+              printf("\nO resultado serÃ¡: %.2f", result);
               break; 
 		    
-	case 3 : printf ("\nMultiplicação entre dois números");
+	case 3 : printf ("\nMultiplicaÃ§Ã£o entre dois nÃºmeros");
               result = calcmultiplicacao (n1,n2);
-              printf("\nO resultado será: %f", total);
+              printf("\nO resultado serÃ¡: %.2f", result);
               break;          
      
-	case 4 : printf ("\nDivisão de dois números");
+	case 4 : printf ("\nDivisÃ£o de dois nÃºmeros");
               result = calcdivisao(n1,n2);
-              printf("\nO resultado será: %f", total);
+              printf("\nO resultado serÃ¡: %.2f", result);
               break; 
 	
-	case 5 : printf ("\nMédia dos três números");
+	case 5 : printf ("\nMÃ©dia dos trÃªs nÃºmeros");
               result = calcularMedia (n1,n2,n3);
-              printf("\nO resultado será: %f", total);
+              printf("\nO resultado serÃ¡: %.2f", result);
               break;  
 		   
 	default: printf ("sair");
     }
+
+   printf("\nEscolha a operaÃ§Ã£o que deseja realizar:");
+   printf("\n1. Soma dos nÃºmeros");
+   printf("\n2. SubtraÃ§Ã£o de dois nÃºmeros");
+   printf("\n3. MultiplicaÃ§Ã£o entre dois nÃºmeros");
+   printf("\n4. DivisÃ£o de dois nÃºmeros");
+   printf("\n5. MÃ©dia dos trÃªs nÃºmeros");
+   printf("\n6. Sair");
+   scanf("%i",&op);
+   
   }
- }
-		         
+ }	         
                
                
                
