@@ -8,76 +8,86 @@
 //processo deverá se repetir até que o último cliente do dia seja atendido e o
 //usuário informe o valor em reais igual a zero.
 
-#include<conio.h>
-#include<stdio.h>
-#include<locale.h>
-#include<math.h>
+#include <conio.h>
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
 
 main()
 
-{Setlocale(LC_ALL "Portuguese");
+{
+    Setlocale(LC_ALL "Portuguese");
 
-float moeda[6],valor,conversao;
-int cod;
+    float moeda[6], valor, conversao;
+    int cod;
 
-printf("\nDolar= 1");
-printf("\nPeso argentino= 2");
-printf("\nDinar do Bahrein= 3");
-printf("\nFranco suiço= 4"); 
-printf("\nLibra Esterlina=5");
-printf("\nEuro=6");
-printf("\n0 para parar o programa");
+    printf("\nDolar= 1");
+    printf("\nPeso argentino= 2");
+    printf("\nDinar do Bahrein= 3");
+    printf("\nFranco suiço= 4");
+    printf("\nLibra Esterlina=5");
+    printf("\nEuro=6");
+    printf("\n0 para parar o programa");
 
-printf("Digite o código de qual moeda deseja converter:")
-scanf("%i",&cod);
+    printf("Digite o código de qual moeda deseja converter:")
+        scanf("%i", &cod);
 
+    switch (cod)
 
+    {
+    case 1:
+        printf("\Dólar");
+        printf("\nDigite um valor para conversão:");
+        scanf("%f", &valor);
+        conversao = valor * 5;
+        break
+    }
 
-  
-	switch(cod)
-	
-    {case 1: printf ("\Dólar");
-    printf("\nDigite um valor para conversão:");
-    scanf("%f",&valor);
-    conversao= valor * 5;
-    break
+    {
+    case 2:
+        printf("\Peso argentino");
+        printf("\nDigite um valor para conversão:");
+        scanf("%f", &valor);
+        conversao = valor * 0.014;
+        break
     }
-    
-    {case 2: printf ("\Peso argentino");
-    printf("\nDigite um valor para conversão:");
-    scanf("%f",&valor);
-    conversao= valor * 0.014;
-    break
+
+    {
+    case 3:
+        printf("\Dinar do Bahrein");
+        printf("\nDigite um valor para conversão:");
+        scanf("%f", &valor);
+        conversao = valor * 5;
+        break
     }
-    
-    {case 3: printf ("\Dinar do Bahrein");
-    printf("\nDigite um valor para conversão:");
-    scanf("%f",&valor);
-    conversao= valor * 5;
-    break
+
+    {
+    case 4:
+        printf("\Franco suiço");
+        printf("\nDigite um valor para conversão:");
+        scanf("%f", &valor);
+        conversao = valor * 5;
+        break
     }
-    
-    {case 4: printf ("\Franco suiço");
-    printf("\nDigite um valor para conversão:");
-    scanf("%f",&valor);
-    conversao= valor * 5;
-    break
+
+    {
+    case 5:
+        printf("\Libra Esterlina");
+        printf("\nDigite um valor para conversão:");
+        scanf("%f", &valor);
+        conversao = valor * 5;
+        break
     }
-    
-    {case 5: printf ("\Libra Esterlina");
-    printf("\nDigite um valor para conversão:");
-    scanf("%f",&valor);
-    conversao= valor * 5;
-    break
+
+    {
+    case 6:
+        printf("\Euro");
+        printf("\nDigite um valor para conversão:");
+        scanf("%f", &valor);
+        conversao = valor * 5;
+        break
     }
-    
-    {case 6: printf ("\Euro");
-    printf("\nDigite um valor para conversão:");
-    scanf("%f",&valor);
-    conversao= valor * 5;
-    break
-    }
-    
-printf("O valor é de: %.2f",conversao);	
-  }
+
+    printf("O valor é de: %.2f", conversao);
+}
 
