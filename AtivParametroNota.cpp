@@ -1,51 +1,52 @@
-//FaÁa um programa em C que peÁa ao usu·rio para digitar 3 notas de um aluno e uma letra, que deve ser A ou P. 
-//O programa ter· duas funÁıes. Se o usu·rio digitar A, o programa dever· chamar uma funÁ„o para calcular a mÈdia aritmÈtica das 3 notas. 
-//Se for P, o programa chamar· outra funÁ„o que retorne a mÈdia ponderada, considerando os pesos 3, 2 e 1, respectivamente.
+//Fa√ßa um programa em C que pe√ßa ao usu√°rio para digitar 3 notas de um aluno e uma letra, que deve ser A ou P. 
+//O programa ter√° duas fun√ß√µes. Se o usu√°rio digitar A, o programa dever√° chamar uma fun√ß√£o para calcular a m√©dia aritm√©tica das 3 notas. 
+//Se for P, o programa chamar√° outra fun√ß√£o que retorne a m√©dia ponderada, considerando os pesos 3, 2 e 1, respectivamente.
 
-#include<conio.h>
-#include<stdio.h>
-#include<locale.h>
-#include<math.h>
+#include <conio.h>
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
 
-float media (float a, float b, float c)
-      {
-	  float s;
-	  s= (a + b + c )/ 3;
-	  return s; 
-	  }
-	  
-float mediap (float a, float b, float c)
-      {
-	  float s;
-	  s = (a*3 + b*2 + c*1) / 6;
-	  return s; 
-	  }
+float media(float a, float b, float c)
+{
+    float s;
+    s = (a + b + c) / 3;
+    return s;
+}
 
+float mediap(float a, float b, float c)
+{
+    float s;
+    s = (a * 3 + b * 2 + c * 1) / 6;
+    return s;
+}
 
 main()
-  {
-   setlocale(LC_ALL, "Portuguese");
+{
+    setlocale(LC_ALL, "Portuguese");
     float nt1, nt2, nt3, total;
-    char op; 
-     printf("\nDigite a primeira nota");
-     scanf("%f",&nt1);
-     printf("\nDigite a segunda nota");
-     scanf("%f",&nt2);
-     printf("\nDigite a terceira nota");
-     scanf("%f",&nt3);
-     printf ("\nDigite A para calcular a mÈdia aritmÈtica ou P para calcular a mÈdia pomderada");
-     scanf("%s",&op);
-     
-     switch (op)
-     {
-	  case 'A' : printf("\MÈdia aritmÈtica!");
-	  total = media (nt1,nt2,nt3);
-	  printf("\nO resultado ser·: %f", total);
-	  break;
-         
-	  case 'P': printf("\MÈdia pomderada!");
-	  total = mediap (nt1,nt2,nt3);
-	  printf("\nO resultado ser·: %f", total);
-	  break;
-     }
+    char op;
+    printf("\nDigite a primeira nota");
+    scanf("%f", &nt1);
+    printf("\nDigite a segunda nota");
+    scanf("%f", &nt2);
+    printf("\nDigite a terceira nota");
+    scanf("%f", &nt3);
+    printf("\nDigite A para calcular a m√©dia aritm√©tica ou P para calcular a m√©dia pomderada");
+    scanf("%s", &op);
+
+    switch (op)
+    {
+    case 'A':
+        printf("\M√©dia aritm√©tica!");
+        total = media(nt1, nt2, nt3);
+        printf("\nO resultado ser√°: %f", total);
+        break;
+
+    case 'P':
+        printf("\M√©dia pomderada!");
+        total = mediap(nt1, nt2, nt3);
+        printf("\nO resultado ser√°: %f", total);
+        break;
+    }
 }
