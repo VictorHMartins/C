@@ -1,42 +1,53 @@
-//FaÁa um programa em C que receba o
+//Fa√ßa um programa em C que receba o
 //total de receitas de uma empresa em
 //um ano e o total das despesas no
-//mesmo perÌodo. O programa dever·
-//ter uma funÁ„o para calcular o lucro
-//(ou prejuÌzo) dessa empresa nesse ano
+//mesmo per√≠odo. O programa dever√°
+//ter uma fun√ß√£o para calcular o lucro
+//(ou preju√≠zo) dessa empresa nesse ano
 //e informar se ela atingiu o objetivo de
 //ter lucro acima de R$ 500.000,00 no ano.
 
-#include<conio.h>
-#include<stdio.h>
-#include<locale.h>
-#include<math.h>
+#include <conio.h>
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
 
-float lucrof (float a, float b)
-      {float s;
-       s = a - b;
-       return s;
-	  }
+float lucrof(float a, float b)
+{
+    float s;
+    s = a - b;
+    return s;
+}
 
 main()
-  {
-   setlocale(LC_ALL, "Portuguese");
-    float l,p,result;
-     printf("\nDigite o valor de lucro:");
-     scanf("%f",&l);
-     printf("\nDigite o valor de despesas:");
-     scanf("%f",&p);
-     result = lucrof(l,p);
-   
-    if ( result >=500.000 )
-       {
+{
+    setlocale(LC_ALL, "Portuguese");
+    float l, p, result;
+    printf("\nDigite o valor de lucro:");
+    scanf("%f", &l);
+    printf("\nDigite o valor de despesas:");
+    scanf("%f", &p);
+    result = lucrof(l, p);
+
+    if (result >= 500.000)
+    {
+        printf("\nObrjetivo atingido!");
+        printf("\nLucro de %f", result);
+    }
+
+    else
+    {
+        printf("\nObrjetivo n√£o atingido!");
+        printf("\nPrejuizo de %f", result);
+    }
+}
         printf("\nObrjetivo atingido!");
         printf("\nLucro de %f",result);
        }
        
     else 
          {
-          printf("\nObrjetivo n„o atingido!");
+          printf("\nObrjetivo n√£o atingido!");
           printf("\nPrejuizo de %f",result);
          } 
 }
